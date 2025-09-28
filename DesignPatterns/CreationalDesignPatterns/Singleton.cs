@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns;
+﻿namespace DesignPatterns.CreationalDesignPatterns;
 
 /// <summary>
 /// Sealed is used to avoid inheritance of the sigleton class through 
@@ -7,7 +7,7 @@
 public sealed class Singleton
 {
     private static Singleton instance;
-    private static object obj;
+    private static readonly object obj = new object();
 
     /// <summary>
     /// Its a private constructor which restricts access to only within this class
